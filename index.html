@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+<style>
+    .container-fluid{
+        background-color: aquamarine;
+    }
+
+    .color1{
+        background-color: purple;
+        color: yellow;
+    }
+    .color0{
+        background-color: orange;
+        color: blue;
+    }
+</style>
+
+    <title>BOOTSTRAP</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/login.html">Iniciar sesión</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="hero container-fluid">
+        <div class="row">
+            <h2>presentacion bootstrap</h2>
+            <p>Estamos aprendiendo bootstrap, una manera de maquetar utilizando 12 columnas a lo largo de toda la pantalla, no importa el tamaño que tenga. se puede hacer totalmente responsive mediante esta forma de trabajo. </p>
+        </div>
+    </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="color0 col-sm-6 col-md-3">
+            <h2>paso 1</h2>
+            <p>En la pagina de bootstrap, fuimos a la version 4.6 y copiamos el link de css en el head, sin crear por el momento un archivo css en nuestro repositorio</p>
+        </div>
+        <div class="color1 col-sm-6 col-md-3">
+            <h2>paso 2</h2>
+            <p>luego copiamos los links "script" que estan en la seccion separate en la pagina y los pegamos justo antes que termine el body. todo esto que copiamos aca es el CDN</p>
+        </div>
+        <div class="color0 col-sm-6 col-md-3">
+            <h2>paso 3</h2>
+            <p>en el html creamos un div class="container-fluid" abuelo para que ocupe el 100% de la pantalla, un div class row padre para que se muestre en una fila y dentro de ese mismo otros cuatro divs hijos con la class col-sm-3 para que cada uno de esos divs ocupen 3 columnas cada uno en el tamaño sm</p>
+        </div>
+        <div class="color1 col-sm-6 col-md-3">
+            <h2>paso 4</h2>
+            <p>ahora hay que hacerlo responsive: a cada div agregarle la clase col-"tamaño"-"cantidad" que define la cantidad de columnas segun el tamaño- col-sm-6 quiere decir que cuando esta en tamaño sm, cada div ocupe 6columnas, o sea el 50%... col-md-3 = en tamaño medium c/div ocupa 3col (25%). tamaño xs toma cada div como 12col (100%) por defecto.</p>
+        </div>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="img/imgcard.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Jonathan y Salem</h5>
+      <p class="card-text">Jonathan es el humano y Salem el gatito, click para mimar a Salem:</p>
+      <a href="img/salemMimado.jpeg" class="btn btn-primary">mimar a Salem</a>
+    </div>
+  </div>
+
+
+
+    
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</body>
+</html>
